@@ -60,11 +60,12 @@ public class LavadoraServicio extends Electrodomestico{
     método padre y añadir el código necesario. Recuerda que las condiciones que hemos
     visto en la clase Electrodoméstico también deben afectar al precio.
     */
-    
-    public int precioFinal(){
-        int precioOriginal = super.precioFinal(l1.getLetra(), l1.getPeso());
+    @Override
+    public int precioFinal(char letra, int peso){
+        //heredado
+        int precioOriginal = super.precioFinal(letra, peso);
         
-      
+        //sumado
         int precioAdicional = 0;
         
         if(l1.getCarga()>30){

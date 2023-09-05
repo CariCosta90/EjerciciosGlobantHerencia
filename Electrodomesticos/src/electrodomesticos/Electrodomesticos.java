@@ -104,11 +104,11 @@ public class Electrodomesticos {
          */
 //        l1.crearLavadora();
 //        l1.mostrarLavadora();
-//        l1.precioFinal();
+//        l1.precioFinal(l1.getLetra(),l1.getPeso());
 //
 //        t1.crearTelevisor();
 //        t1.mostrarTelevisor();
-//        t1.precioFinal();
+//        t1.precioFinal(t1.getLetra(), t1.getPeso());
         /*
         Siguiendo el ejercicio anterior, en el main vamos a crear un ArrayList de Electrodomésticos
         para guardar 4 electrodomésticos, ya sean lavadoras o televisores, con valores ya asignados.
@@ -147,13 +147,13 @@ public class Electrodomesticos {
             System.out.println(electrodomestico);
             
             if (electrodomestico instanceof Lavadora) {
-                int precioFinal = l1.precioFinal();
+                int precioFinal = l1.precioFinal(l1.getLetra(), l1.getPeso());
                 precioArray += precioFinal;
                 continue;
             }
 
             if (electrodomestico instanceof Televisor) {
-                int precioFinal = t1.precioFinal();
+                int precioFinal = t1.precioFinal(t1.getLetra(), t1.getPeso());
                 precioArray += precioFinal;
                 continue;
             }

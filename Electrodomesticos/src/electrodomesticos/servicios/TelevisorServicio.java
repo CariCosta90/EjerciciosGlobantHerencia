@@ -48,9 +48,9 @@ public class TelevisorServicio extends Electrodomestico{
     $500. Recuerda que las condiciones que hemos visto en la clase Electrodomestico
     también deben afectar al precio.
     */
-    
-    public int precioFinal(){
-        int precioOriginal = super.precioFinal(t1.getLetra(), t1.getPeso());
+    @Override
+    public int precioFinal(char letra, int peso){
+        int precioOriginal = super.precioFinal(letra, peso);
         
         int resolucion = t1.getResolucion();
         boolean sintetizador = t1.isSintonizadorTDT();
