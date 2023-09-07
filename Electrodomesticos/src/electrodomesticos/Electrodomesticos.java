@@ -102,13 +102,13 @@ public class Electrodomesticos {
         Vamos a crear una Lavadora y un Televisor y llamar a los métodos necesarios para mostrar
         el precio final de los dos electrodomésticos.
          */
-//        l1.crearLavadora();
-//        l1.mostrarLavadora();
-//        l1.precioFinal(l1.getLetra(),l1.getPeso());
-//
-//        t1.crearTelevisor();
-//        t1.mostrarTelevisor();
-//        t1.precioFinal(t1.getLetra(), t1.getPeso());
+        l1.crearLavadora();
+        l1.mostrarLavadora();
+        l1.precioFinal(l1.getLetra(),l1.getPeso());
+
+        t1.crearTelevisor();
+        t1.mostrarTelevisor();
+        t1.precioFinal(t1.getLetra(), t1.getPeso());
         /*
         Siguiendo el ejercicio anterior, en el main vamos a crear un ArrayList de Electrodomésticos
         para guardar 4 electrodomésticos, ya sean lavadoras o televisores, con valores ya asignados.
